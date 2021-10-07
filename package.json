@@ -1,0 +1,28 @@
+{
+  "name": "eventapp",
+  "version": "1.0.0",
+  "description": "Event Management APP",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.16",
+    "vite": "^2.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhusona/eventapp.git"
+  },
+  "author": "Madusudhanan B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhusona/eventapp/issues"
+  },
+  "homepage": "https://github.com/madhusona/eventapp#readme"
+}
