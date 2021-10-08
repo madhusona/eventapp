@@ -6,37 +6,97 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<link rel="stylesheet" href="./css/tailwind.css" />
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+		crossorigin="anonymous"></script>
 
 	<title>Event App</title>
 </head>
+
 <body>
-   <div class="container m-10 p-20">
-	<p class="text-xs md:text-lg">Teams</p>
-	<table class="table-auto border-separate border border-red-500">
-		<thead>
-		  <tr>
-			<th class="border border-green-800 bg-yellow-700">Team Name</th>						
-		  </tr>
-		</thead>
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="">Team Event</a>
+			
 		
-		<tbody>
-		  <tr >
-			<td class="border border-green-800">
-				<a href="Teams/a.html">team 1</a>
-			</td>	
-		  </tr>
-		  <tr>
-			<td class="border border-green-800"><a href="Teams/a.html">team 2</a></td>						
-		  </tr>
-	 
-		</tbody>
-	  </table>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">About us</a>
+			  </li>
+			  
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			  </li>
+			  
+			</ul>
+			<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Search Here..." aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
+
+	
+	<div class="container m-10 p-20">
+		<marquee style="color: black;font: 1em sans-serif;font-size: larger;" width="100%" direction="right" height="100px">
+			Here Some team
+			</marquee>
+		<img src="images/wal.jfif" alt="Notebook" style="width:100%;">
+		<div class="content">
+
+			
+		<p class="text-xs md:text-lg">Teams</p>
+		<table class="table-auto border-separate border border-red-500">
+			<thead>
+				
+				<tr>
+					<th class="border border-green-800 bg-yellow-700">Team Name</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td class="border border-green-800">
+						<a href="Teams/a.html">team 1</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="border border-green-800"><a href="Teams/a.html">team 2</a></td>
+				</tr>
+
+			</tbody>
+		</table>
 
 
-   </div>
-   
+	</div>
+		
+		</div>
+	  </div>
+	  <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-primary text-white-50">
+		<div class="container text-center">
+		  <small>Copyright &copy; TeamEvent
+		  </small>
+		</div>
+	  </footer>
+	</body>
+
 </body>
 <script>
-    
+
 </script>
+
 </html>
