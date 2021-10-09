@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    th, td {
+      border: 1px solid black;
+      border-radius: 6px;
+    }
+    </style>
+  <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <title>wizards</title>
+</head>
+<body>
+  <div class="container m-50 p-20">
+    <table class="table-auto border border-gray-400 bg-gray-200">
+        <thead>
+            <th class="border p-1 border-red-500 bg-purple-700 text-white">
+            Name
+            </th>
+            <th class="border p-1 border-red-700 bg-purple-700 text-white">
+              Github Profile
+            </th>
+          </thead>
+           <tbody>
+            <tr>
+              <td class="p-2 italic ...">Kaviyarasan</td>
+              <td class="p-4"><a href="https://github.com/kaviyarasan00" target="_blank">www.github.com/kaviyarasan00</a></td>            </tr>
+              <tr>
+                <td class="p-2 italic ...">Indhumathi</td>
+                <td class="p-4"><a href="https.github.com/indhumathimarannan" target="_blank">www.github.com/indhumathimarannan</a></td>
+               </tr>
+            <tr>
+                <td class="p-2 italic ...">Gopinath</td>
+                <td class="p-4"><a href="https://github.com/gopinathkaiser" target="_blank">www.github.com/gopinathkaiser</a></td>
+               </tr>
+              
+                <tr>
+                 <td class="p-2 italic ...">Praveen</td>
+                 
+                 <td class="p-4"><a href="https://github.com/20ITA37" target="_blank">www.github.com/20ITA37</a></td>
+                 
+                </tr>
+                
+                <tr>
+                 <td class="p-2 italic ...">karthick kumar</td>
+                 <td class="p-4"><a href="https://github.com/KarthickKumar23" target="_blank">www.github.com/KarthickKumar23</a></td>
+                </tr>
+              
+             </tbody>
+           
+
+    
+    </table>
+  </div>
+    
+</body>
+</html>
