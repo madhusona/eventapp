@@ -1,3 +1,42 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.table1{
+    table-layout: auto;
+    border-collapse: separate;
+    padding: 1.25rem;
+    border-radius: 1.5rem;
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+    border-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+}
+
+.tableheader{  
+    padding: 1.25rem;
+    margin: 1rem;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));  
+}
+
+.tablebody{  
+    padding: 1.25rem;
+    margin: 1rem;
+    border-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+  
+  }
+.divsection{
+    margin: 5rem; 
+    padding: 5rem;
+}
