@@ -6,7 +6,7 @@ module.exports = {
         input:{
           index:'index.html',
           Gopi:'Gopinath/index.html',
-          indhu:'Indumathi/index.html',
+          indhu:'Indhumathi/index.html',
           kavi:'kaviyarasan/index.html'
                          
         }
