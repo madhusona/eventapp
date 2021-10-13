@@ -9,43 +9,107 @@
 </head>
 
 <body>
+
+    <div>
+        <nav class="bg-gray-500 shadow-lg">
+            <div class="">
+                <div class="flex justify-left">
+                    <div class="flex">
+                        
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-start">
+                            
+    
+                            <a href="#about"
+                                class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">About</a>
+                            <a href="#corevalues"
+                                class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">Core
+                                Values</a>
+                            <a href="#service"
+                                class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">Services</a>
+                                <a href="#feature"
+                                class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">Our Features</a>
+                                <a href="#contact"
+                                class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">Contact
+                                Us</a>
+                                <h1 class="py-4 px-4 bg:green text-white text-cente py-10 px-10 rounded">MY TITLE BAR</h1> 
+                        </div>
+                    </div>
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center text-sm space-x-0.5 justify-right">
+                        <a href="request.html"
+                        class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300">Request
+                        a quote
+                    </a>
+                        <a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
+                            class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"> Pay Now
+                        </a>
+                    </div>
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="index.html"
+                            class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+    
+                    <li><a href="#about"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+                    <li><a href="#corevalues"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Core Values</a></li>
+                    <li><a href="#service"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+                            <li><a href="#feature"
+                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our Features</a></li>
+        
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+                </ul>
+            </div>
+    
+        </nav>
+    </div>
+
     <div class="container m-10 p-20">
         <div class="text-lg">
-            SOME BUTTONS...
-        </div>    
-            <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-10 my-5">
+          
+            <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-4 my-10">
                 <div>
-                    <a href="#" class="bg-gray-500  text-white text-center py-2 px-4 rounded ">
-                       ROUNDED
+                    <a href="#" class="bg-white hover:bg-red-700 text-white text-center py-2 px-4 rounded">
+                        
                     </a>
                 </div>
                 <div>
-                    <a href="#" class="bg-green-500 hover:bg-blue-1000 border border-gray-500 text-black text-center py-2 px-4 rounded-full ">
-                        ROUNDEDFULL
+                    <a href="#" class="bg-red-500 hover:bg-red-700 text-white text-center py-2 px-4 rounded-full">
+                        page contents here
                     </a>
-                </div>
-                <div>
-                    <a href="#" class="bg-transparent border border-gray-500 text-black text-center hover:bg-blue-1000 hover:text-pink-500 text-center py-2 px-4 rounded cursor-wait">
-                        CLICK ME!
-                    </a>
-                </div>
-           
-               
-                <div> 
-                    <a href="#" class="bg-gray-500 border-gray-500 text-white text-center py-2 px-4 ">square button</a>
                 </div>
                 
-
-               
-                <div>
-                    <a href="#" class="bg-red-500 border border-pink-500 text-white text-center py-2 px-4 rounded-full ">END 
-
-                    </a>
-                </div>
-    
-            
+              
+            </div>
         </div>
+        
     </div>
+
+    <script>
+		
+		const btn = document.querySelector("button.mobile-menu-button");
+		const menu = document.querySelector(".mobile-menu");
+
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+		});
+    </script>
 
 </body>
 
