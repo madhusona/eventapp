@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <title>Event App</title>
+</head>
+
+<body>
+
+  <div>
+    <nav class="bg-yellow-400 shadow-lg">
+      <div class="">
+          <div class="flex justify-start">
+              <div class="flex">
+  
+                  <!-- Primary Navbar items -->
+                  <div class="hidden md:flex items-start">
+  
+  
+                      <a href="#first-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">first-link</a>
+                      <a href="#second-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">second-link
+                          </a>
+                      <a href="#third-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">third-link</a>
+                          <a href="#fourth-link"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">fourth-link</a>
+                          <a href="#details"
+                          class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">details
+                        </a>
+                  </div>
+              </div>
+              <!-- Secondary Navbar items -->
+              <div class="hidden md:flex items-center text-sm space-x-0.5">
+                  <a href="Click.html"
+                  class="py-2 px-2 font-medium text-white bg-blue-600 rounded hover:bg-blue-900 transition duration-300">Click it
+              </a>
+                  <a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
+                      class="py-2 px-2 font-medium text-white bg-green-400 rounded hover:bg-green-900 transition duration-300"> show more
+                  </a>
+              </div>
+              <!-- Mobile menu button -->
+              <div class="md:hidden flex items-center">
+                  <button class="outline-none mobile-menu-button">
+                      <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu">
+          <ul class="">
+              <li class="active"><a href="index.html"
+                      class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+  
+              <li><a href="#first-link"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">first-link</a></li>
+              <li><a href="#second-link"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">second-link</a></li>
+              <li><a href="#third-link"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">third-link</a></li>
+                      <li><a href="#fourth-link"
+                          class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">fourth-link</a></li>
+  
+              <li><a href="#Details"
+                      class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Details</a></li>
+          </ul>
+      </div>
+  
+  </nav>
+  
+  </div>
+
+    <div class="container m-10 p-20">
+        <div class="text-lg">
+            MY BUTTONS
+            <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-3 my-8">
+                <div>
+                    <a href="#" class="bg-green-400 hover:bg-red-700 text-white text-center py-2 px-4 rounded inline-flex items-center">
+                        Button 1
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="bg-purple-500 hover:bg-gray-700 text-white text-center py-2 px-4 rounded inline-flex items-center">
+                        Button 2
+                    </a>
+                </div>
+                <div>
+                    <a href="#"
+                        class="bg-transparent border border-pink-500 text-gray-500 hover:bg-pink-600 hover:text-white text-center py-2 px-4 rounded-full  ">
+                        Button 3
+                    </a>
+                </div>
+              
+            </div>
+        </div>
+        <div>
+            <div class="text-lg my-4">
+                Reference
+            </div>
+            <div>
+                https://www.ordinarycoders.com/blog/article/7-tailwindcss-buttons
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+		const btn = document.querySelector("button.mobile-menu-button");
+		const menu = document.querySelector(".mobile-menu");
+
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+		});
+    </script>
+
+</body>
+
+</html>
