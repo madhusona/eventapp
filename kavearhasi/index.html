@@ -5,11 +5,123 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<link rel="stylesheet" href="../css/tailwind.css" />
+    <!-----java script-->
+    
+    <!---------------------->
  </head> 
  <body>
-<div class=" p-64 
-lg:grid grid-cols-6
-" >
+    <!--------------------------------------------------------NAV BAR--------------------------> 
+<div class="bg-gray-800 h-28 border border-solid border-gray-200 rounded-md">
+    <!--top nav---------------------------------------------->
+ <div class=" hidden md:flex justify-between   ">
+    <!--logo------->
+    <div class=" flex space-x-3 p-3 ">
+        <div class="">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                  </svg> 
+            </span>
+        </div>
+        <div class="font-serif text-white">
+            <span>TESLA</span>
+        </div>
+        
+    </div>
+    
+    <!--search bar-->
+    <div class="hidden md:flex justify-center border border-solid border-white bg-white rounded-lg bg-opacity-70 w-44 h-6 text-center m-3 ">
+        <div class="p-1">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+        </span>
+        </div>
+        <button class="focus:border border-gray-600">search</button>
+    </div>
+    <!--profile icon-->
+    <div class="hidden md:flex m-3">
+        <span class=" md:m-1.5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+        </span>
+        <span class=" md:m-1.5"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg> </span>
+    </div>
+    
+    </div>
+    <!--bottom nav------------------------------------------>
+    <div class="hidden md:flex "> 
+        <!--links-->
+        <div class="text-white m-1 px-3 hover:bg-white  hover:text-gray-900 hover:border-2 rounded-lg">Feature</div>
+        <div class="text-white m-1 px-3 hover:bg-white  hover:text-gray-900 hover:border-2 rounded-lg">Login</div>
+        <div class="text-white m-1 px-3 hover:bg-white  hover:text-gray-900 hover:border-2 rounded-lg">sign up</div>
+        <div class="text-white m-1 px-3 hover:bg-white  hover:text-gray-900 hover:border-2 rounded-lg ">  support</div>
+    </div>
+    <!--mobile button--------------------------------------->
+    <div class="flex justify-between ">
+         <!--logo------->
+    <div class=" flex space-x-3 p-3 ">
+        <div class="">
+           
+            <span>
+                <button class="outline-none .mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                  </svg> 
+                </button>  
+            </span>
+        
+                </div>
+        <div class="font-serif text-white">
+            <span>TESLA</span>
+        </div>
+        </div>
+        <div class="py-4 mx-5 md:hidden">
+     <span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="white">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+     </span>   
+        </div>
+</div>
+    <!--mobile menu----------------------------------------->
+    <div class=" hidden mobile-menu  ">
+    <div class="  flex justify-end py-12  ">
+        <!--icons-->
+      <div class="border-b-4 border-t-4 border-gray-600  m-2 p-1">
+        <div class="flex space-x-3"> 
+            <span class="hover:bg-gray-800 border rounded-md p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+            </span>
+            <span  class="hover:bg-gray-800 border rounded-md p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                  </svg>
+            </span>
+            <span class="hover:bg-gray-800 border rounded-md p-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg> </span>
+        </div>
+        <!--links-------->
+        <div class="p-2">
+            <div class="text-gray-900 m-1 px-3 hover:bg-gray-800 text-center hover:text-white hover:border-2 rounded-lg">Feature</div>
+            <div class="text-gray-900 m-1 px-3 hover:bg-gray-800 text-center hover:text-white hover:border-2 rounded-lg">Login</div>
+            <div class="text-gray-900 m-1 px-3 hover:bg-gray-800 text-center hover:text-white hover:border-2 rounded-lg">sign up</div>
+            <div class="text-gray-900 m-1 px-3 hover:bg-gray-800 text-center hover:text-white hover:border-2 rounded-lg ">  support</div>  
+        </div>
+       </div>
+       </div>
+    </div>
+
+</div>
+ <!--------------------------------------------------------BUTTON CONTAINER--------------------->    
+<div class=" p-64 md:flex justify-between" >
      <div  >
          <button class="border-solid  border-4 border-red-300 rounded-md   bg-red-600 text-white hover:text-red-700 hover:bg-white hover:border-red-400 m-2 p-1 w-32">Welcome :)</button>
      </div>
@@ -34,5 +146,17 @@ lg:grid grid-cols-6
         <button class="border-solid  border-2 border-gray-300 rounded-tl-lg m-2 p-1 w-32 focus:border-gray-600 focus:text-gray-900">Save</button>
      </div>
     </div>
+<!----------------------------------------------------------------------------------------------------->
+<script>
+		
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+
+
  </body>
 </html>
