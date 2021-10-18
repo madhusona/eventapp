@@ -1,4 +1,92 @@
 <!DOCTYPE html>
+<style>
+  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #fefefe;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+  .heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #96a7a7, #637b8a);
+    color: #fff;
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #756e91, #5c3096);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(73, 63, 63, 0.25);
+ 
+    }
+  
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+</style>
 <html>
 
 <head>
@@ -11,12 +99,11 @@
 <body>
     
     <div>
-        <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+        <nav class="flex items-center bg-gray-600 p-3 flex-auto">
             <div class="">
-                
-                <div class="p-2 mr-4 inline-flex items-center">
+                <div class="flex justify-start">
                     <div class="flex">
-                        <span class="text-xl text-white font-bold uppercase tracking-wide ml-auto"
+                        <span class="text-xl text-white font-bold uppercase tracking-wide ml-auto md-auto"
                         >Wizards</span
                       >
                         
@@ -40,17 +127,17 @@
                        
                     </div>
                     <!-- Secondary Navbar items -->
-                    <div class="hidden md:flex items-center text-sm space-x-0.5  lg:ml-auto">
+                    <div class="hidden md:flex items-right text-sm space-x-0.5  lg:ml=left">
                         <a href="request.html"
                         class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300 ">Request
                         a quote
                     </a>
                         <a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
-                            class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300  "> Pay Now
+                            class="py-2 px-2 font-medium text-white bg-green-500 rounded hover\r:bg-green-400 transition duration-300  "> Pay Now
                         </a>
                     </div>
                     <!-- Mobile menu button -->
-                    <div class="md:hidden flex items-center ">
+                    <div class="md:hidden flex items-auto ">
                         <button class="outline-none mobile-menu-button ml-auto">
                             <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
@@ -80,11 +167,66 @@
                             class="block text-sm px-2 py-4 hover:bg-blue-200 transition duration-300">Contact Us</a></li>
                 </ul>
             </div>
-    
+        
         </nav>
-    </div>
-    <div class="container m-10 p-20">
-        <div class="text-lg">
+    </div> 
+            <div class="container">
+                <div class="heading">
+                  <h1>KARPAGAM INSTITUTE OF TECHNOLOGY</h1>
+                </div>
+                <div class="row">
+                  <div class="card">
+                    <img src="i.jpg" alt="KARPAGAM">
+                    <div class="card-header">
+                      <h1>FACILITY</h1>
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                      </p>
+                      <a href="#" class="btn">Read more</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="m.jpg" alt="KARPAGAM">
+                    <div class="card-header">
+                      <h1>CULTURALS</h1>
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                      </p>
+                      <a href="#" class="btn">Read more</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="k.jpg" alt="KARPAGAM">
+                    <div class="card-header">
+                      <h1>CELEBRATION</h1>
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                      </p>
+                      <a href="#" class="btn">Read more</a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="l.jpg" alt="KARPAGAM">
+                    <div class="card-header">
+                      <h1>COURSES</h1>
+                    </div>
+                    <div class="card-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                      </p>
+                      <a href="#" class="btn">Read more</a>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <div class="container m-10 p-20">
+                <div class="text-lg">
             My Buttons
             <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-4 my-10">
                 <div>
@@ -131,70 +273,7 @@
             </div>
         </div>
     </div>
-    <html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Css Responsive Flexbox Cards</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="heading">
-      <h2 class="text-black-300 bg-gray-100">KARPAGAM INSTITUTE OF TECHNOLOGY EVENTS</h2>
-    </div>
-    <div class="row">
-      <div class="card">
-        <div class="card-header">
-          <h1>React</h1>
-        </div>
-        <div class="card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
-          </p>
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h1>Vue</h1>
-        </div>
-        <div class="card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
-          </p>
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h1>Angular</h1>
-        </div>
-        <div class="card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
-          </p>
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header">
-          <h1>JQuery</h1>
-        </div>
-        <div class="card-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
-          </p>
-          <a href="#" class="btn">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
-</html>
-    
+          
     <script>
 		
 		const btn = document.querySelector("button.mobile-menu-button");
@@ -205,6 +284,6 @@
 		});
     </script>
 
-</body>
+  </body>
 
 </html>

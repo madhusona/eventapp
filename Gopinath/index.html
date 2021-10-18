@@ -6,10 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/tailwind.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>Document</title>
+    <title>Gopinath</title>
    
 </head>
 <body>
+     
+    <div>
+        <nav class="bg-white-400 shadow-lg">
+            <div class="">
+                <div class="flex justify-center">
+
+                    <div class="flex">
+                        
+                        <!-- Primary Navbar items -->
+                        <div class="hidden md:flex items-start">
+                            
+    
+                            <a href="#Home"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                            <a href="#About"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">About us
+                                </a>
+                            <a href="#service"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Services</a>
+                                <a href="#carrers"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Carrers</a>
+                                <a href="#contact"
+                                class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden flex items-end">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class=" w-6 h-6 text-gray-500 hover:text-blue-500 " x-show="!showMenu" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="#home"
+                            class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold">Home</a></li>
+                    <li><a href="#about"
+                            class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">About</a></li>
+                    <li><a href="#service"
+                            class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Services</a></li>
+                            <li><a href="#carrers"
+                                class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Carrers</a></li>
+        
+                    <li><a href="#contact"
+                            class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300">Contact Us</a></li>
+                </ul>
+            </div>
+    
+        </nav>
+    </div>
+ 
+    <!--buttons-->
     <div class="container p-20 m-10 ">
         <div class="text-lg">
             <h3 class="font-bold">MY BUTTONS</h3>
@@ -74,6 +134,18 @@
         </div>
        
     </div>
+
+
+
+    <script>
+		
+		const btn = document.querySelector("button.mobile-menu-button");
+		const menu = document.querySelector(".mobile-menu");
+
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+		});
+    </script>
 
 </body>
 </html>
