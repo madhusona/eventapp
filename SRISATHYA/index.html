@@ -9,76 +9,298 @@
 </head>
 
 <body>
-    <div class="container m-10 p-20">
-        <div class="text-lg">
-            My Buttons
-            <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-4 my-10">
-                <div>
-                    <a href="#" class="bg-black hover:bg-gray-900 text-white text-center py-2 px-4 rounded-full h-14 w-14 inline-flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                      </svg>
-                    </a>
-                  </div>
-                <div>
-                    <a href="#" class="bg-red-400 hover:bg-red-700 text-white text-center py-2 px-4 rounded">
-                        Button
-                    </a>
-                </div>
-                <div>
-                <a href="#" class="bg-green-200 hover:bg-gray-1000 border-b-4 border-black hover:border-gray-800 text-black text-center py-2 px-4 rounded">
-                    Button
-                   </a>
-                </div>
-                <div>
-                    <a href="#" class="bg-blue-500 hover:bg-gray-900 text-white text-center py-2 px-4 rounded">
-                        Button
-                      </a>
-                </div>
-                <div>
-                    <a href="#" class="bg-pink-500 hover:bg-pink-400 border-b-4 border-pink-700 hover:border-pink-500 text-white text-white text-center py-2 px-4 rounded">
-                        Button
-                      </a>
-                </div>
-                <div>
-                <a href="#" class="bg-indigo-500 hover:bg-indigo-700 text-white text-center py-2 px-4 rounded-full">
-                    Button
-                  </a>
 
-                  </div>
-                
+   
 
-                <div>
-                    <a href="#" class="bg-green-200 hover:bg-green-500 hover:text-white text-green-500 text-center py-2 px-4 rounded">
-                        Button
-                      </a>
-                    </div>
-                <div>
-                    <a href="#"
-                        class="bg-transparent border border-gray-500 text-gray-500 hover:bg-gray-500 hover:text-white text-center py-2 px-4 rounded">
-                        Button
-                    </a>
-                </div>
-                <div>
-                <a href="#" class="bg-yellow-500 hover:bg-yellow-700 text-white py-2 px-4 rounded inline-flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>  
-                    Button
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polygon points="50,0 100,0 50,100 0,100" />
+      </svg>
+
+      <div>
+        <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+          <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
+            <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+              <div class="flex items-center justify-between w-full md:w-auto">
+                <a href="#">
+                  <span class="sr-only">Workflow</span>
+                  <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg">
                 </a>
+                <div class="-mr-2 flex items-center md:hidden">
+                  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <!-- Heroicon name: outline/menu -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
                 </div>
-              
+              </div>
             </div>
+            <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+              <a href="#" class="font-medium text-green-500 hover:text-blue-900">CREATE MEET</a>
+
+              <a href="#" class="font-medium text-green-500 hover:text-blue-900">UPCOMING MEETS</a>
+
+              <a href="#" class="font-medium text-green-500 hover:text-blue-900">ATTENDED MEETS</a>
+
+              <a href="#" class="font-medium text-green-500 hover:text-blue-900">NOTIFICATIONS</a>
+
+              <a href="#" class="font-medium text-green-500 hover:text-blue-900">SUPPORT</a>
+
+              <a href="#" class="font-medium text-black-800 hover:text-red-500">LOG IN </a>
+            </div>
+          </nav>
         </div>
-        <div>
-            <div class="text-lg my-4">
-                Reference
+
+        <!--
+          Mobile menu, show/hide based on menu open state.
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+        <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div class="px-5 pt-4 flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+              </div>
+              <div class="-mr-2">
+                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span class="sr-only">Close main menu</span>
+                  <!-- Heroicon name: outline/x -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
             </div>
-            <div>
-                https://www.ordinarycoders.com/blog/article/7-tailwindcss-buttons
+            <div class="px-2 pt-2 pb-3 space-y-1">
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
+
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+              <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
             </div>
+            <a href="#" class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+              Log in
+            </a>
+          </div>
         </div>
+      </div>
+
+      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+            <span class="block xl:inline">   !!! MEET !!!   </span>
+            <span class="block text-indigo-600 xl:inline"> ...EXPLORE MORE... </span>
+          </h1>
+          <p class="mt-3 text-base text-pink-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+           BE GOOD TO EVERYONE YOU MEET
+          </p>
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-green-100 hover:bg-pink-200 md:py-4 md:text-lg md:px-10">
+                Get started
+              </a>
+            </div>
+            <div class="mt-3 sm:mt-0 sm:ml-3">
+              <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-red-700 bg-green-100 hover:bg-pink-200 md:py-4 md:text-lg md:px-10">
+                Live demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
+  </div>
+  <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+    <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://image.shutterstock.com/image-vector/video-conference-colleague-chatting-on-600w-1809002464.jpg" alt="">
+  </div>
+</div>
+
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <p class="insetParagraph brandHero-slogan _brandHero-module_isTitle__2QOjF _aboutDescriptionBrandHeroTheme-module_isTitle__2yf-u text--heavy">Meetup creates possibilities</p>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-red-800s">Meetup is a platform for finding and building local communities. People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together.</p>
+        <div class="flex mt-6 justify-center">
+          <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Shooting Stars</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">The Catalyzer</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="flex-grow">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Neptune</h2>
+            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="bg-black hover:bg-gray-900 text-white text-center py-2 px-4 rounded-full h-14 w-14 inline-flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <span class="block text-indigo-600 xl:inline">WORLD WIDE MEETS!!</span>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://statusour.com/wp-content/uploads/2021/08/CSK-IPL-2021-Status-Video-768x768.jpg">
+          </a>
+          
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">SPORTS</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">CSK VINTAGE</h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.nakedconversations.com/wp-content/uploads/2017/06/Female-Computer-Programmer_edited1.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">PROGRAMMERS</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">WOMEN PROGRAMMERS</h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Eiffel_tower_at_dawn_horizontal.jpg/1200px-Eiffel_tower_at_dawn_horizontal.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">TOURISM</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">PARIS,FRANCE</h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="data:image/jpeg;base64,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">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">BOOK</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">EXPLORE MORE </h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202102/why_do_stock_prices_change_frequently_660_240221092049.jpg?size=1200:675.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">BUSINESS</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">SHARE MARKETING</h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://image.shutterstock.com/image-vector/vector-illustration-neon-future-game-260nw-1861318969.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">GAMES AND FUN</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">HAVE SOME FUN</h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://cdn.mos.cms.futurecdn.net/M7fDTpDnJcZ4dt3myngzxi.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">SPACE & SCIENCE</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">IS THAT VACCUM?</h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://winmr.com/wp-content/uploads/2018/10/Industrial-Robotics-AI-Machine-Learning.jpeg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-red-500 text-xs tracking-widest title-font mb-1">FUTURE</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">ARTIFICIAL INTELLIGENCE</h2>
+            <p class="mt-1">JOIN NOW!!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <script>
+		
+		const btn = document.querySelector("button.mobile-menu-button");
+		const menu = document.querySelector(".mobile-menu");
+
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+		});
+    </script>
+    <div>
+      <a href="#" class="bg-pink-500 hover:bg-green-300 border-b-5 border-white-500 hover:border-white-500 text-yellow text-white  text-center py-2 px-4 rounded">
+          FOR MORE-->
+        </a>
+  </div>
 
 </body>
 
