@@ -1,114 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>KIT Info</title>
+		<link rel="stylesheet" href="../css/tailwind.css">
+	</head>
+	<body>
+		<!-- Navbar goes here -->
+		<nav class="bg-blue-300 shadow-lg">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between">
+					<div class="flex space-x-7">
+						<div>
+							<!-- Website Logo -->
+							<a href="#" class="flex items-center py-4 px-2">
+								<img src="kitlogo.jpg" alt="Logo" class="h-10 w-10 mr-2">
+								<span class="font-semibold text-white text-lg">Profile</span>
+							</a>
+						</div>
+						<!-- Primary Navbar items -->
+						<div class="hidden md:flex items-center space-x-1">
+							<a href="/Indhumathi/index.html" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold ">Home</a>
+							<a href="" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300">About Courses</a>
+							<a href="" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300">About</a>
+							<a href="" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300">Contact Us</a>
+						</div>
+					</div>
+					<!-- Secondary Navbar items -->
+					<div class="hidden md:flex items-center space-x-3 ">
+						<a href="" class="py-2 px-2 font-medium text-blue-500 rounded hover:bg-blue-500 hover:text-white transition duration-300">Log In</a>
+						<a href="" class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-800 transition duration-300">Sign Up</a>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-6 h-6 text-white hover:text-blue-500 "
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- mobile menu -->
+			<div class="hidden mobile-menu">
+				<ul class="">
+					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+					<li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+					<li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+					<li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+				</ul>
+			</div>
+            <script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/tailwind.css" />
-    <title>Event App</title>
-</head>
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+            <div class="bg-gray-100">
+                <div class="container px-6 py-4 mx-auto lg:flex lg:h-128 lg:py-16 ">
+                    <div class="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
+                        <div class="max-w-lg">
+                            <h1 class="text-xl tracking-wide text-white text-gray-800 lg:text-3xl lg:text-4xl">Indhumathi</h1>
+                            <p class="mt-4 text-gray-300 text-gray-600">An aspiring programmer,currently pursuing B.Tech Information Technology in KIT and will be graduted in 2024.For further details,download my resume.</p>
 
-<body>
-    <div>
-        <nav class="bg-blue-200">
-            <div>
-                <div>
-                    <!-- Primary Navbar items -->
-                    <div class="overflow-hidden md:flex items-start font-bold text-black">
-                        <a href="#about" class="py-6 px-3 hover:text-blue-800 transition duration-400">About</a>
-                        <a href="#corevalues" class="py-6 px-3 hover:text-blue-800 transition duration-300">Core
-                            Values</a>
-                        <a href="#service" class="py-6 px-3 hover:text-blue-800 transition duration-300">Services</a>
-                        <a href="#our feature" class="py-6 px-3 hover:text-blue-800 transition duration-300">Our
-                            Features</a>
-                        <a href="#contact" class="py-6 px-3 hover:text-blue-800 transition duration-300">Contact
-                            Us</a>
+                                
+
+                            <div class="mt-6">
+                                <a href="/Indhumathi/IndhuResume.pdf" download="IndhumathiResume"
+                                    class="inline-block px-3 py-2 font-semibold text-center text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400">
+                                    Download</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Secondary Navbar items -->
-                    <div class="overflow-hidden md:flex items-center text-sm space-x-1.5 text-white font-extrabold float-right">
-                        <a href="request.html"
-                            class="py-2 px-2 transition duration-500 ease-in-out bg-gradient-to-r from-black to-blue-500 transform hover:scale-100 hover:from-black-400 hover:to-green-800 rounded">Request
-                            a quote
-                        </a>
-                        <a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
-                            class="py-2 px-2 transition duration-500 ease-in-out bg-gradient-to-r from-black to-blue-500 transform hover:scale-100 hover:from-black-400 hover:to-green-800 rounded">
-                            Pay Now
-                        </a>
-
-                    </div>
-                    <!-- Mobile menu button -->
-                    <div class="md:hidden flex items-center">
-                        <button class="outline-none mobile-menu-button">
-                            <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
+                    <div class="flex items-center justify-center w-full mt-2 lg:h-96 lg:w-1/2">
+                        <img class="object-cover w-full max-w-2xl rounded-md lg:h-full"
+                            src="/Indhumathi/kit.png" alt="KIT images">
                     </div>
                 </div>
             </div>
-            <!-- mobile menu -->
-            <div class="hidden mobile-menu">
-                <ul class="">
-                    <li class="active"><a href="index.html"
-                            class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-
-                    <li><a href="#about"
-                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
-                    <li><a href="#corevalues"
-                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Core Values</a>
-                    </li>
-                    <li><a href="#service"
-                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-                    <li><a href="#feature"
-                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Our Features</a>
-                    </li>
-
-                    <li><a href="#contact"
-                            class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-    </div>
-
-    <div>
-        <div class="text-lg my-4">
-            Reference
-        </div>
-        <div>
-            https://www.ordinarycoders.com/blog/article/7-tailwindcss-buttons
-        </div>
-    </div>
-    <div class="container m-10 p-20">
-        <div class="text-lg">
-            My Buttons
-            <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-4 my-10">
-                <div>
-                    <a href="/wizards.html">
-                        <button
-                            class="transition duration-500 ease-in-out bg-gradient-to-r from-green-400 to-blue-500 transform hover:scale-110 hover:from-teal-400 hover:to-green-800 text-white font-bold py-2 px-4 rounded">
-                            Indhu Button
-                        </button>
-                    </a>
+            <section class="text-gray-600 body-font bg-blue-300">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-20">
+                    
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Features of KIT</h1>
+                  </div>
+                  <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/4">
+                      <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                          <h2 class="text-gray-900 text-lg title-font font-medium">Integrated laboratory</h2>
+                        </div>
+                        <div class="flex-grow">
+                          <p class="leading-relaxed text-base">Enhances students with more practical knowledge.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/4">
+                      <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                          <h2 class="text-gray-900 text-lg title-font font-medium">Value Added Program </h2>
+                        </div>
+                        <div class="flex-grow">
+                          <p class="leading-relaxed text-base">Helps students to improve their skills apart from syllabus.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/4">
+                      <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                          <h2 class="text-gray-900 text-lg title-font font-medium">Sports</h2>
+                        </div>
+                        <div class="flex-grow">
+                          <p class="leading-relaxed text-base">Well equiped play ground supports students to realize their sports skills</p>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="p-4 md:w-1/4">
+                        <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                          <div class="flex items-center mb-3">
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Green campus</h2>
+                          </div>
+                          <div class="flex-grow">
+                            <p class="leading-relaxed text-base">KIT provides friendly environment and peacefull green campus</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                 </div>
-            </div>
+              </section>
+              
+              <div class="p-5 m-20 bg-gray-100">
+                <h1 class="text-xl tracking-wide text-white text-gray-800 lg:text-3xl lg:text-4xl">
+                    Courses 
+                  </h1>
+                <!--Card 1-->
+                <div class=" w-full lg:max-w-full lg:flex p-5">
+                  <div class="h-48 lg:h-auto lg:w-60 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/Indhumathi/laptop.jpg')" title="computer">
+                  </div>
+                  <div class="border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                    <div class="mb-8">
+                      <div class="text-gray-900 font-bold text-xl mb-2">Information Technology</div>
+                      <p class="font-sans md:font-serif"> The  department develops engineers with a rich blend of competent, technical,managerial and social skills.Also takes the best initiatives to develop soft skills,analytical abilities and verbal communications of students.So that,Students can face competitions in the corporate world confidently.Our institution pays special emphasis on teaching and hands-on practical work.Students exhibit their innovative ideas,skils.potentials as project and have won many awards at university levels.
+                          KIT, one of the top B.Tech collages in Coimbatore aims to improve the practical skills of the student through various activities in the collage thereby elevating their personality and career.
+                      </p>
+                    </div>
+                    <div class="flex items-center">
+                      <div class="text-sm">
+                        <p class="text-gray-900 leading-none">Indhumathi, Information Technology Student.</p>
+                        <p class="text-gray-600">KIT,Cbe.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                   <!--Card 2-->
+                   <div class=" w-full lg:max-w-full lg:flex p-5">
+                    <div class="h-48 lg:h-auto lg:w-60 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('/Indhumathi/mechanical.jpg')" title="mechanical">
+                    </div>
+                    <div class="border-r border-b border-l border-gray-800 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+                      <div class="mb-8">
+                        <div class="text-gray-900 font-bold text-xl mb-2">Mechanical Engineering</div>
+                        <p class="font-sans md:font-serif">The department frequently conducts value added courses .Provides spoken tutorial courses at IIT-Bombay.The department organizes entrepreneur awareness camp.</p>
+                      </div>
+                      <div class="flex items-center">
+                        <div class="text-sm">
+                          <p class="text-gray-900 leading-none">Indhumathi,IT student at KIT.</p>
+                          <p class="text-gray-600">Cbe</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+	</body>
+    <footer class="text-gray-600 body-font bg-blue-300">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            		<img src="kitlogo.jpg" alt="Logo" class="h-10 w-10">
+            <span class="ml-3 text-xl">KIT</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 KIT —
+            <a href="https://twitter.com/Karpagamitech" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Twitter</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
         </div>
-    </div>
-
-    <script>
-
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
-
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
-
-</body>
-
+      </footer>
 </html>
