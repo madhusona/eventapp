@@ -1,6 +1,10 @@
 <!DOCTYPE html>
+<style>
+  body {
+      font-family: 'Oxygen', sans-serif;
+  }
+</style>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,15 +12,13 @@
     <title>Event App</title>
 </head>
 
-<body>
-    
-    <div>
-        <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+<body class="h-screen bg-gray-100">
+     <div>
+        <nav class="flex items-center bg-gray-600 p-3 flex-auto">
             <div class="">
-                
-                <div class="p-2 mr-4 inline-flex items-center">
+                <div class="flex justify-start">
                     <div class="flex">
-                        <span class="text-xl text-white font-bold uppercase tracking-wide ml-auto"
+                        <span class="text-xl text-white font-bold uppercase tracking-wide ml-auto md-auto"
                         >Wizards</span
                       >
                         
@@ -40,17 +42,17 @@
                        
                     </div>
                     <!-- Secondary Navbar items -->
-                    <div class="hidden md:flex items-center text-sm space-x-0.5  lg:ml-auto">
+                    <div class="hidden md:flex items-right text-sm space-x-0.5  lg:ml=left">
                         <a href="request.html"
                         class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300 ">Request
                         a quote
                     </a>
                         <a href="https://pages.razorpay.com/pl_Gy5u2SUUqTnRkG/view" target="_blank"
-                            class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300  "> Pay Now
+                            class="py-2 px-2 font-medium text-white bg-green-500 rounded hover\r:bg-green-400 transition duration-300  "> Pay Now
                         </a>
                     </div>
                     <!-- Mobile menu button -->
-                    <div class="md:hidden flex items-center ">
+                    <div class="md:hidden flex items-auto ">
                         <button class="outline-none mobile-menu-button ml-auto">
                             <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
@@ -80,12 +82,10 @@
                             class="block text-sm px-2 py-4 hover:bg-blue-200 transition duration-300">Contact Us</a></li>
                 </ul>
             </div>
-    
-        </nav>
-    </div>
-    <div class="container m-10 p-20">
-        <div class="text-lg">
-            My Buttons
+      </nav>
+     </div>
+        <div class="container m-10 p-20">
+          <div class="text-lg">
             <div class="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-4 my-10">
                 <div>
                     <a href="#" class="bg-gray-300 hover:bg-white text-black py-2 px-4 rounded inline-flex items-center">
@@ -119,19 +119,154 @@
                       </a>
                       
                 </div>
-              
+                <div>
+                  <a href="#" class="bg-transparent border border-black text-blue-300 hover:bg-blue-400 hover:text-gray-500 text-center py-2 px-4 rounded">
+                      Button
+                    </a>
+                </div>
+              <div>
+                <a href="#" class="bg-purple-300 hover:bg-purple-500 text-blue text-center py-2 px-4 rounded-full">
+                    Button
+                </a>
+              </div>
+              <div>
+                  <a href="#" class="bg-gray-300 hover:bg-white text-black py-2 px-4 rounded inline-flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                      sign in
+                    </a>
+               </div>
             </div>
-        </div>
-        <div>
-            <div class="text-lg my-4 text-orange-500 ">
-                Reference
-            </div>
-            <div>
-              <a href=" https://www.ordinarycoders.com/blog/article/7-tailwindcss-buttons " target="_blank" class="bg-black hover:bg-gray-400 text-white text-center py-2 px-4 rounded-full">button website link</a>
-            </div>
-        </div>
-    </div>
-    
+         </div>   
+     </div>
+     <section class="md:h-full flex items-center text-gray-600">
+      <div class="container px-5 py-24 mx-auto">
+          <div class="text-center mb-12">
+              <h5 class="text-base md:text-lg text-indigo-700 mb-1">See Our Recent News</h5>
+              <h1 class="text-4xl md:text-6xl text-gray-700 font-semibold">Karpagam Institution</h1>
+          </div>
+          <div class="flex flex-wrap -m-4">
+              <div class="p-4 sm:w-1/2 lg:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                      <img class="lg:h-72 md:h-48 w-full object-cover object-center"
+                          src="i.jpg" alt="blog">
+                      <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
+                          <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
+                              2021</h2>
+                          <h1 class="text-2xl font-semibold mb-3">Infrastruture</h1>
+                          <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              Aperiam modi, expedita quos doloremque autem ipsum itaque incidunt ipsam reprehenderit
+                              fuga! Dolores quisquam eius cum accusamus?</p>
+                          <div class="flex items-center flex-wrap ">
+                              <a class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
+                                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                      fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path d="M5 12h14"></path>
+                                      <path d="M12 5l7 7-7 7"></path>
+                                  </svg>
+                              </a>
+                              <span
+                                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                      stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                      <circle cx="12" cy="12" r="3"></circle>
+                                  </svg>1.2K
+                              </span>
+                              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                      stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                      <path
+                                          d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                      </path>
+                                  </svg>6
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="p-4 sm:w-1/2 lg:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                      <img class="lg:h-72 md:h-48 w-full object-cover object-center"
+                          src="k.jpg" alt="blog">
+                      <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
+                          <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
+                              2021</h2>
+                          <h1 class="text-2xl font-semibold mb-3">Celebration</h1>
+                          <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              Aperiam modi, expedita quos doloremque autem ipsum itaque incidunt ipsam reprehenderit
+                              fuga! Dolores quisquam eius cum accusamus?</p>
+                          <div class="flex items-center flex-wrap ">
+                              <a class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
+                                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                      fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path d="M5 12h14"></path>
+                                      <path d="M12 5l7 7-7 7"></path>
+                                  </svg>
+                              </a>
+                              <span
+                                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                      stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                      <circle cx="12" cy="12" r="3"></circle>
+                                  </svg>1.2K
+                              </span>
+                              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                      stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                      <path
+                                          d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                      </path>
+                                  </svg>6
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="p-4 sm:w-1/2 lg:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                      <img class="lg:h-72 md:h-48 w-full object-cover object-center"
+                          src="l.jpg" alt="blog">
+                      <div class="p-6 hover:bg-indigo-700 hover:text-white transition duration-300 ease-in">
+                          <h2 class="text-base font-medium text-indigo-300 mb-1">October 29,
+                              2021</h2>
+                          <h1 class="text-2xl font-semibold mb-3">Facility</h1>
+                          <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                              Aperiam modi, expedita quos doloremque autem ipsum itaque incidunt ipsam reprehenderit
+                              fuga! Dolores quisquam eius cum accusamus?</p>
+                          <div class="flex items-center flex-wrap ">
+                              <a class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
+                                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                      fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                      <path d="M5 12h14"></path>
+                                      <path d="M12 5l7 7-7 7"></path>
+                                  </svg>
+                              </a>
+                              <span
+                                  class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                      stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                      <circle cx="12" cy="12" r="3"></circle>
+                                  </svg>1.2K
+                              </span>
+                              <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                  <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                      stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                      <path
+                                          d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                      </path>
+                                  </svg>6
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
     <script>
 		
 		const btn = document.querySelector("button.mobile-menu-button");
@@ -142,6 +277,6 @@
 		});
     </script>
 
-</body>
+  </body>
 
 </html>
